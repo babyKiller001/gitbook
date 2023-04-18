@@ -1,0 +1,658 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>view矩阵 · 个人笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="projection.html" />
+    
+    
+    <link rel="prev" href="model.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <a target="_blank" href="https://www.runoob.com/markdown/md-tutorial.html">
+            
+                    
+                    Markdown教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../git.html">
+            
+                <a href="../../../git.html">
+            
+                    
+                    git相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <a target="_blank" href="https://www.runoob.com/git/git-tutorial.html">
+            
+                    
+                    常用命令1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <a target="_blank" href="https://segmentfault.com/a/1190000039147662">
+            
+                    
+                    常用命令2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <a target="_blank" href="https://www.atlassian.com/git/tutorials/undoing-changes/git-clean">
+            
+                    
+                    git clean
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" >
+            
+                <a target="_blank" href="https://waynerv.com/posts/git-undo-intro/">
+            
+                    
+                    git 撤销
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" >
+            
+                <a target="_blank" href="https://waynerv.com/posts/git-rebase-intro/">
+            
+                    
+                    git rebase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" >
+            
+                <a target="_blank" href="https://waynerv.com/posts/git-merge-intro/">
+            
+                    
+                    git 合并
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../../gitbookBuild.html">
+            
+                <a href="../../../gitbookBuild.html">
+            
+                    
+                    gitbook搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../cg.html">
+            
+                <a href="../../cg.html">
+            
+                    
+                    图形学
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    个人小项目:tinyrenderer
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.1" data-path="matrix.html">
+            
+                <a href="matrix.html">
+            
+                    
+                    矩阵推导
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.1.1" data-path="model.html">
+            
+                <a href="model.html">
+            
+                    
+                    变换矩阵model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.1.1.1.2" data-path="view.html">
+            
+                <a href="view.html">
+            
+                    
+                    view矩阵
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.1.3" data-path="projection.html">
+            
+                <a href="projection.html">
+            
+                    
+                    投影矩阵
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../../rotation.html">
+            
+                <a href="../../rotation.html">
+            
+                    
+                    旋转
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1" data-path="../../oritentation.html">
+            
+                <a href="../../oritentation.html">
+            
+                    
+                    Oritentation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2" data-path="../../eulerangle.html">
+            
+                <a href="../../eulerangle.html">
+            
+                    
+                    欧拉角
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.3" data-path="../../quaternions.html">
+            
+                <a href="../../quaternions.html">
+            
+                    
+                    四元数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../../left_right_hand.html">
+            
+                <a href="../../left_right_hand.html">
+            
+                    
+                    左手系与右手系
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >view矩阵</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <blockquote>
+<ul>
+<li><p>&#x4ECE;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;(World Space)&#x53D8;&#x5316;&#x5230;&#x89C2;&#x5BDF;&#x7A7A;&#x95F4;(Camera Space)</p>
+</li>
+<li><p>&#x56E0;&#x4E3A;&#x8FD9;&#x91CC;&#x7684;&#x5750;&#x6807;&#x7CFB;&#x91C7;&#x7528;&#x7684;&#x662F;&#x53F3;&#x624B;&#x7CFB;,&#x6240;&#x4EE5;&#x76F8;&#x673A;&#x770B;&#x5411;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x7684;-z</p>
+</li>
+<li><p>view&#x77E9;&#x9635;&#x901A;&#x8FC7;&#x76F8;&#x673A;&#x5F53;&#x524D;&#x7684;&#x4F4D;&#x7F6E;&#x63A8;&#x5BFC;&#x51FA;&#x4E00;&#x4E2A;&#x77E9;&#x9635;&#x4F7F;&#x5176;&#x4F4D;&#x7F6E;&#x4E0E;&#x539F;&#x70B9;&#x91CD;&#x5408;&#xFF0C;&#x770B;&#x5411;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;-z,&#x76F8;&#x673A;&#x7684;up&#x671D;&#x5411;&#x4E0E;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;y&#x8F74;&#x91CD;&#x5408;&#x3002;&#x8FD9;&#x6837;&#x6BCF;&#x5F53;&#x5BF9;&#x76F8;&#x673A;&#x81EA;&#x8EAB;&#x8FDB;&#x884C;&#x53D8;&#x5316;&#xFF0C;&#x53EA;&#x9700;&#x63A8;&#x5BFC;&#x51FA;&#x65B0;&#x7684;view&#x77E9;&#x9635;&#xFF0C;&#x5C06;&#x5176;&#x4F5C;&#x7528;&#x5230;&#x76F8;&#x673A;&#x4E0E;&#x7269;&#x4F53;&#x8EAB;&#x4E0A;&#x5373;&#x53EF;&#x5C06;&#x4ED6;&#x4EEC;&#x53D8;&#x6362;&#x5230;&#x4E0A;&#x8FF0;&#x7684;&#x201C;&#x6807;&#x51C6;&#x4F4D;&#x7F6E;&#x201D;&#xFF0C;&#x65B9;&#x4FBF;&#x8FDB;&#x884C;&#x8FDB;&#x4E00;&#x6B65;&#x7684;&#x64CD;&#x4F5C;</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="view&#x77E9;&#x9635;&#x63A8;&#x5BFC;">view&#x77E9;&#x9635;&#x63A8;&#x5BFC;</h2>
+<blockquote>
+<p>&#x6784;&#x5EFA;&#x4E00;&#x4E2A;view&#x77E9;&#x9635;&#xFF0C;&#x5F80;&#x5F80;&#x63A5;&#x53D7;&#x4E09;&#x4E2A;&#x53C2;&#x6570;</p>
+<ul>
+<li>&#x76F8;&#x673A;&#x5F53;&#x524D;&#x7684;&#x4F4D;&#x7F6E;position</li>
+<li>&#x76F8;&#x673A;&#x7684;&#x671D;&#x5411;lookat,&#x6216;&#x8005;&#x662F;&#x770B;&#x5411;&#x7684;&#x7269;&#x4F53;&#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x8FD9;&#x91CC;&#x7684;&#x671D;&#x5411;&#x6307;&#x5411;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x7684;z&#x800C;&#x4E0D;&#x662F;&#x76F8;&#x673A;&#x7684;&#x6B63;&#x9762;&#x671D;&#x5411;&#xFF0C;&#x5177;&#x4F53;&#x800C;&#x8A00;&#xFF0C;&#x5BF9;&#x4E8E;&#x76F8;&#x673A;p&#x770B;&#x5411;&#x7269;&#x4F53;q&#xFF0C;lookat &#x4E3A;p-q&#x800C;&#x4E0D;&#x662F;q-p</li>
+<li>&#x76F8;&#x673A;&#x7684;&#x4E0A;&#x65B9;up</li>
+</ul>
+</blockquote>
+<p>&#x4E00;&#x4E2A;view&#x77E9;&#x9635;&#x7684;&#x6784;&#x5EFA;&#x53EF;&#x4EE5;&#x62C6;&#x5206;&#x4E3A;&#x4E09;&#x6B65;</p>
+<blockquote>
+<p>1.&#x6839;&#x636E;&#x53C2;&#x6570;&#x6784;&#x5EFA;&#x76F8;&#x673A;&#x7684;&#x5750;&#x6807;&#x7CFB;
+&#x76F8;&#x673A;&#x5750;&#x6807;&#x7684;z&#x8F74;cz&#x5373;&#x4E3A;lookat,&#x901A;&#x8FC7;up&#x4E0E;&#x76F8;&#x673A;&#x7684;z&#x8F74;&#x53EF;&#x4EE5;&#x786E;&#x5B9A;&#x4E00;&#x4E2A;&#x5E73;&#x9762;&#xFF0C;&#x4E8C;&#x8005;&#x53C9;&#x4E58;&#x4E3A;&#x76F8;&#x673A;&#x7684;x&#x8F74;cx&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x8981;&#x5F97;&#x5230;&#x4E09;&#x4E2A;&#x4E92;&#x76F8;&#x5782;&#x76F4;&#x7684;&#x8F74;&#xFF0C;up&#x4E0E;z&#x8F74;&#xFF0C;x&#x8F74;&#x672A;&#x5FC5;&#x6B63;&#x4EA4;&#xFF0C;&#x6240;&#x4EE5;&#x6700;&#x540E;&#x7528;z&#x8F74;&#x4E0E;x&#x8F74;&#x53C9;&#x4E58; &#x5F97;&#x5230;&#x76F8;&#x673A;&#x7684;y&#x8F74;cy</p>
+<p>2.&#x5C06;&#x76F8;&#x673A;&#x5E73;&#x79FB;&#x5230;&#x539F;&#x70B9;:
+&#x77E5;&#x9053;&#x4E86;&#x76F8;&#x673A;&#x7684;&#x4F4D;&#x7F6E;position&#xFF0C;&#x5F88;&#x5BB9;&#x6613;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x5E73;&#x79FB;&#x77E9;&#x9635;</p>
+<p>$$
+   \left[
+   \begin{matrix}
+    1 &amp; 0 &amp; 0 &amp; -px\
+    0 &amp; 1 &amp; 0 &amp; -py\
+    0 &amp; 0 &amp; 1 &amp; -pz\
+    0 &amp; 0 &amp; 0 &amp; 1
+   \end{matrix}
+   \right]</p>
+<p>$$ </p>
+<p>3.&#x65CB;&#x8F6C;&#x76F8;&#x673A;&#x7684;&#x8F74;
+&#x6211;&#x4EEC;&#x7684;&#x76EE;&#x7684;&#x662F;&#x901A;&#x8FC7;&#x65CB;&#x8F6C;&#x76F8;&#x673A;&#x7684;&#x8F74;&#x4F7F;&#x5176;&#x4E0E;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x8F74;&#x91CD;&#x5408;&#xFF0C;&#x76F4;&#x63A5;&#x63A8;&#x5BFC;&#x6BD4;&#x8F83;&#x56F0;&#x96BE;&#xFF0C;&#x53EF;&#x4EE5;&#x5148;&#x63A8;&#x5BFC;&#x5982;&#x4F55;&#x8BA9;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x8F74;&#x4E0E;&#x76F8;&#x673A;&#x7684;&#x8F74;&#x91CD;&#x5408;&#xFF0C;&#x5373;&#x8BA9;[1,0,0],[0,1,0],[0,0,1]&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x77E9;&#x9635;&#x53D8;&#x6362;&#x4E3A;[cx.x,cx.y,cx.z],[cy.x,cy.y,cy.z],[cz.x,cz.y,cz.z]&#x3002;&#x663E;&#x7136;&#x8FD9;&#x4E2A;&#x77E9;&#x9635;&#x4E3A;</p>
+<p>$$
+   \left[
+   \begin{matrix}
+    cx.x &amp; cy.x &amp; cz.x &amp; 0\
+    cx.y &amp; cy.y &amp; cz.y &amp; 0\
+    cx.z &amp; cy.z &amp; cz.z &amp; 0\
+    0 &amp; 0 &amp; 0 &amp; 1
+   \end{matrix}
+   \right]</p>
+<p>$$ 
+&#x6240;&#x4EE5;&#x5C06;&#x76F8;&#x673A;&#x7684;&#x8F74;&#x4E0E;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x8F74;&#x91CD;&#x5408;&#x7684;&#x77E9;&#x9635;&#x4E3A;&#x4E0A;&#x8FF0;&#x77E9;&#x9635;&#x7684;&#x9006;&#x77E9;&#x9635;</p>
+<p>$$
+   \left[
+   \begin{matrix}
+    cx.x &amp; cx.y &amp; cx.z &amp; 0\
+    cy.x &amp; cy.y &amp; cy.z &amp; 0\
+    cz.x &amp; cz.y &amp; cz.z &amp; 0\
+    0 &amp; 0 &amp; 0 &amp; 1
+   \end{matrix}
+   \right]</p>
+<p>$$ </p>
+</blockquote>
+<p>&#x6700;&#x540E;&#xFF0C;&#x5C06;&#x5E73;&#x79FB;&#x4E0E;&#x65CB;&#x8F6C;&#x7684;&#x77E9;&#x9635;&#x7EC4;&#x5408;&#x5373;&#x53EF;&#x5F97;&#x5230;&#x6700;&#x7EC8;&#x7684;view&#x77E9;&#x9635;</p>
+<blockquote>
+<p>$$
+   \left[
+   \begin{matrix}
+    cx.x &amp; cx.y &amp; cx.z &amp; -(cx.x<em>px + cx.y</em>py + cx.z<em>pz)\
+    cy.x &amp; cy.y &amp; cy.z &amp; -(cy.x</em>px + cy.y<em>py + cy.z</em>pz)\
+    cz.x &amp; cz.y &amp; cz.z &amp; -(cz.x<em>px + cz.y</em>py + cz.z*pz)\
+    0 &amp; 0 &amp; 0 &amp; 1
+   \end{matrix}
+   \right]</p>
+<p>$$</p>
+</blockquote>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5BF9;&#x6700;&#x540E;&#x4E00;&#x5217;&#x8FDB;&#x884C;&#x7B80;&#x5316;</p>
+<blockquote>
+<p>$$
+   \left[
+   \begin{matrix}
+    cx.x &amp; cx.y &amp; cx.z &amp; -(cx.dot(p))\
+    cy.x &amp; cy.y &amp; cy.z &amp; -(cy.dot(p))\
+    cz.x &amp; cz.y &amp; cz.z &amp; -(cz.dot(p))\
+    0 &amp; 0 &amp; 0 &amp; 1
+   \end{matrix}
+   \right]</p>
+<p>$$</p>
+</blockquote>
+<h1 id="&#x5DE6;&#x624B;&#x7CFB;&#x4E0E;&#x53F3;&#x624B;&#x7CFB;">&#x5DE6;&#x624B;&#x7CFB;&#x4E0E;&#x53F3;&#x624B;&#x7CFB;</h1>
+<h3 id="&#x5B9A;&#x4E49;&#xFF1A;">&#x5B9A;&#x4E49;&#xFF1A;</h3>
+<p>&#x7B80;&#x5355;&#x6765;&#x8BF4;&#xFF0C;&#x5DE6;&#x624B;&#x7CFB;&#x4E0E;&#x53F3;&#x624B;&#x7CFB;&#x7684;&#x533A;&#x522B;&#x5C31;&#x662F;&#x8BA1;&#x7B97;&#x5411;&#x91CF;&#x53C9;&#x4E58;&#x65F6;&#x662F;&#x7528;&#x5DE6;&#x624B;&#x8FD8;&#x662F;&#x53F3;&#x624B;&#x6765;&#x5224;&#x65AD;&#x65B9;&#x5411;
+<img src="../img/10.jpg" width="300"></p>
+<h3 id="&#x5DEE;&#x522B;&#xFF1A;">&#x5DEE;&#x522B;&#xFF1A;</h3>
+<p>&#x5BF9;&#x4E8E;&#x5E38;&#x89C1;&#x7684;&#x56FE;&#x5F62;&#x5B66;api,OpenGL&#x4F7F;&#x7528;&#x7684;&#x662F;&#x53F3;&#x624B;&#x7CFB;&#xFF0C;Direct3D&#x4F7F;&#x7528;&#x7684;&#x662F;&#x53F3;&#x624B;&#x7CFB;,&#x5176;&#x5DEE;&#x522B;&#x4F53;&#x663E;&#x5728;&#x51E0;&#x4E2A;&#x65B9;&#x9762;</p>
+<blockquote>
+<p><strong>&#x6B63;&#x5411;&#x65CB;&#x8F6C;&#x65B9;&#x5411;</strong>:
+&#x5728;&#x53F3;&#x624B;&#x7CFB;&#x4E2D;&#xFF0C;&#x6B63;&#x5411;&#x65CB;&#x8F6C;&#x65B9;&#x5411;&#x4E3A;&#x9006;&#x65F6;&#x9488;&#xFF0C;&#x800C;&#x5728;&#x5DE6;&#x624B;&#x7CFB;&#x4E2D;&#xFF0C;&#x6B63;&#x5411;&#x65CB;&#x8F6C;&#x65B9;&#x5411;
+&#x4E3A;&#x987A;&#x65F6;&#x9488;</p>
+<p><strong>&#x53C9;&#x79EF;&#x65B9;&#x5411;</strong>:
+&#x5728;&#x53F3;&#x624B;&#x7CFB;&#x4E2D;&#xFF0C;&#x7528;&#x53F3;&#x624B;&#x5224;&#x65AD;&#xFF0C;&#x5DE6;&#x624B;&#x7CFB;&#x4E2D;&#xFF0C;&#x7528;&#x5DE6;&#x624B;&#x5224;&#x65AD;</p>
+<p><strong>MVP&#x53D8;&#x6362;</strong>:</p>
+<ul>
+<li>&#x5BF9;&#x4E8E;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#xFF0C;&#x5DE6;&#x624B;&#x7CFB;&#x4E0E;&#x53F3;&#x624B;&#x7CFB;&#x90FD;&#x63CF;&#x8FF0;&#x7684;&#x662F;&#x540C;&#x6837;&#x7684;&#x7269;&#x4F53;&#xFF0C;&#x56E0;&#x6B64;
+&#x4E0D;&#x4F1A;&#x6709;&#x5F71;&#x54CD;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;model&#x53D8;&#x6362;&#x6CA1;&#x6709;&#x5DEE;&#x522B;</li>
+<li>&#x4F46;&#x662F;&#x5BF9;&#x4E8E;view&#x53D8;&#x6362;&#x5C31;&#x4E0D;&#x540C;&#x4E86;&#xFF0C;&#x6BD4;&#x5982;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;:
+&#x5728;(3,0,0)&#x6709;&#x4E00;&#x4E2A;&#x7EFF;&#x8272;&#x7684;&#x70B9;&#xFF0C;&#x5728;(-3,0,0)&#x6709;&#x4E00;&#x4E2A;&#x7EA2;&#x8272;&#x7684;&#x70B9;,&#x76F8;&#x673A;
+EyePos(0, 0, 15), LookAt(0, 0, 0), UpVec(0, 1, 0)
+<img src="../img/11.jpg">
+&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5DE6;&#x624B;&#x7CFB;&#x548C;&#x53F3;&#x624B;&#x7CFB;&#x5F97;&#x5230;&#x4E86;&#x5DE6;&#x53F3;&#x76F8;&#x53CD;&#x7684;&#x7ED3;&#x679C;<h2 id="&#x8F6C;&#x5316;&#xFF1A;">&#x8F6C;&#x5316;&#xFF1A;</h2>
+&#x7531;&#x4E0A;&#x8FF0;view&#x53D8;&#x6362;&#x7684;&#x4F8B;&#x5B50;&#x53EF;&#x77E5;&#xFF0C;&#x8981;&#x60F3;&#x5DE6;&#x624B;&#x7CFB;&#x4E0E;&#x53F3;&#x624B;&#x7CFB;&#x5F97;&#x5230;&#x76F8;&#x540C;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x53EA;&#x9700;&#x5C06;&#x70B9;&#x7684;x&#x503C;&#x53D6;&#x8D1F;&#x5373;&#x53EF;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;<h2 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h2>
+</li>
+<li><a href="https://www.3dgep.com/understanding-the-view-matrix/" target="_blank">https://www.3dgep.com/understanding-the-view-matrix/</a></li>
+<li><a href="https://learnopengl.com/Getting-started/Camera" target="_blank">https://learnopengl.com/Getting-started/Camera</a></li>
+<li><a href="https://gamedev.stackexchange.com/questions/178643/the-view-matrix-finally-explained" target="_blank">https://gamedev.stackexchange.com/questions/178643/the-view-matrix-finally-explained</a></li>
+</ul>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="model.html" class="navigation navigation-prev " aria-label="Previous page: 变换矩阵model">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="projection.html" class="navigation navigation-next " aria-label="Next page: 投影矩阵">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"view矩阵","level":"3.1.1.1.2","depth":4,"next":{"title":"投影矩阵","level":"3.1.1.1.3","depth":4,"path":"cg/tinyrenderer/matrix/projection.md","ref":"cg/tinyrenderer/matrix/projection.md","articles":[]},"previous":{"title":"变换矩阵model","level":"3.1.1.1.1","depth":4,"path":"cg/tinyrenderer/matrix/model.md","ref":"cg/tinyrenderer/matrix/model.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-element","chapter-fold"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"hide-element":{"elements":[".gitbook-link"]},"chapter-fold":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"个人笔记","gitbook":"*"},"file":{"path":"cg/tinyrenderer/matrix/view.md","mtime":"2023-04-15T15:58:38.430Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-04-18T15:06:35.985Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

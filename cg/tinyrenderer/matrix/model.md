@@ -1,3 +1,5 @@
+将物体从自身的局部空间(Model Space)变换到世界坐标系(World Space)
+
 ## 1.平移矩阵(translate)
 ![](../img/1.PNG)
 
